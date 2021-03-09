@@ -8,7 +8,6 @@ function App() {
     <>
       <GlobalStyles />
       <Layout />
-      <ServerList />
     </>
   );
 }
