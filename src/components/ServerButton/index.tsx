@@ -1,5 +1,6 @@
 import React from 'react'
-import { Button, ImgSvg } from './styles'
+import { Button } from './styles'
+import SVG from 'react-inlinesvg'
 import chat from '../../assets/chat.svg'
 
 export interface Props {
@@ -23,7 +24,7 @@ const ServerButton: React.FC <Props> = ({
             className={isSelected ? 'active' : ''}
 
         >
-            {isHome && <ImgSvg src={chat} />}
+            {isHome && <SVG src={chat} />}
         </Button>
     )
 }

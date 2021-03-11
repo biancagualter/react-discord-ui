@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import SVG from 'react-inlinesvg'
+
 import { Props } from '.'
 
 export const Button = styled.button<Props> `
@@ -57,15 +57,13 @@ export const Button = styled.button<Props> `
     &.active, &:hover {
         border-radius: 16px;
         background-color: ${props => props.isHome ? 'var(--link)' : 'var(--discord)'};
-
-       
-    }
-`
-
-export const ImgSvg = styled(SVG)`
-    & path {
-        &.active, &:hover {
-            fill: var(--white);
+        svg {
+            & path {
+            fill: var(--white)
+            }
         }
     }
+
 `
+
+
