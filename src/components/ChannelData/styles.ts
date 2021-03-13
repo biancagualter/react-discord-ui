@@ -13,11 +13,12 @@ export const Container = styled.div `
 export const Messages = styled.div `
     display: flex;
     flex-direction: column;
-    max-height: calc(100vh -46px -68px);
+    max-height: calc(100vh - 46px - 68px);
     padding: 20px 0;
     overflow-y: scroll;
 
     ::-webkit-scrollbar {
+        
         width: 8px;
     }
 
@@ -27,7 +28,7 @@ export const Messages = styled.div `
     }
 
     ::-webkit-scrollbar-track {
-        background-color: var(--secondary);
+        background-color: var(--primary);
     }
 `
 export const InputWrapper = styled.div `
